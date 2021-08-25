@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="py-5">
 
   <!-- <form class="js-intro-form" action="https://echo.htmlacademy.ru">
     <div>
@@ -39,23 +39,27 @@
     <p><strong>So'mdagi pul:</strong> <b></b> so'm</p>
   </div> -->
 
-<div class="col-12 justify-content-center">
-  <h1 class="mb-4 ml-3 text-primary">Dollar bormi oka</h1>
-  <form action="https://echo.htmlacademy.ru" class="col-6 d-flex align-items-center js-intro-form">
-    <input class="form-control input-summa col-2 text-primary" type="number" name="summa" aria-label="summa" placeholder="Summa" required>
+<div class="col-12 mx-auto border rounded p-3" style="width: 500px;">
+  <div>
+    <h1 class="mb-4 text-primary mx-auto" style="width: 400px;">Dollar bormi oka</h1>
+    <form action="https://echo.htmlacademy.ru" class="d-flex flex-column align-items-center js-intro-form">
+      <div class="d-flex w-100">
+        <input class="form-control input-summa text-primary" type="number" name="summa" aria-label="summa" placeholder="Summa" required>
 
-    <select class="js-select form-control col-2 mx-2" name="valyuta">
-      <option class="text-primary" value="10634">USD</option>
-      <option class="text-primary" value="12475">Yeuro</option>
-      <option class="text-primary" value="143">Rubl</option>
-      <option class="text-primary" value="14580">Funt</option>
-    </select>
+        <select class="js-select form-control ml-1" name="valyuta">
+          <option class="text-primary" value="10634">USD</option>
+          <option class="text-primary" value="12475">Yeuro</option>
+          <option class="text-primary" value="143">Rubl</option>
+          <option class="text-primary" value="14580">Funt</option>
+        </select>
+      </div>
 
-    <button class="btn btn-primary col-2" type="submit">O'girish</button>
-  </form>
+      <button class="btn btn-primary w-100 mt-2" type="submit">O'girish</button>
+    </form>
 
-  <div class="p-0 ml-3 mt-4">
-    <output class="text-primary">Total: <span class="js-convert font-weight-bold text-primary"></span></output>
+    <div class="d-flex align-items-center flex-column p-0 mt-3">
+      <output class="text-primary">Total: <span class="js-convert font-weight-bold text-primary"></span></output>
+    </div>
   </div>
 </div>
 
@@ -63,37 +67,41 @@
 <!-- -------------------------------------------------------------------------------- -->
 
 
-<h1 class="ml-4 text-danger">Fizz Buzz</h1>
-<div class="col-12 justify-content-center mt-5">
-  <form class="js-fizz-form col-5 d-flex align-items-center" action="https://echo.htmlacademy.ru">
-    <input class="js-fizz-input form-control col-3 text-danger" type="number" name="number" aria-label="number" placeholder="Raqam" required>
+<div class="mx-auto border rounded p-3" style="width: 500px;">
+  <h1 class="text-danger mx-auto" style="width: 200px;">Fizz Buzz</h1>
+<div class="mt-5">
+  <form class="js-fizz-form d-flex align-items-center" action="https://echo.htmlacademy.ru">
+    <input class="js-fizz-input form-control text-danger" type="number" name="number" aria-label="number" placeholder="Raqam" required>
 
-    <button class="btn btn-danger col-3 ml-5" type="submit">Natija</button>
+    <button class="btn btn-danger w-100 ml-2" type="submit">Natija</button>
   </form>
 
-  <div class="col-3 p-0 mt-4 border p-1">
+  <div class="p-0 mt-4 border p-1">
     <outpu class="js-fizz-output p-1 font-weight-bold text-danger"><span class="js-fizz-output col-5 p-2 font-weight-bold text-danger"></span></output>
   </div>
+</div>
 </div>
 
 
 <hr>
 <!-- ---------------------------------------------------------------------------------- -->
 
-<h1 class="ml-4 text-success">Sonni Toping</h1>
-<div class="col-12 justify-content-center mt-5">
+<div class="mx-auto border rounded p-3" style="width: 500px;">
+  <h1 class="text-success mx-auto" style="width: 300px;">Sonni Toping</h1>
+<div class="justify-content-center mt-5">
   <p class="font-weight-bold text-success m-0">0 va 100 orasida son kiriting</p>
   <p class="font-weight-bold text-success">6 ta imkoniyatingiz bor</p>
   <form class="js-game-form d-flex align-items-center" action="https://echo.htmlacademy.ru">
-    <input class="js-game-input col-3 form-control text-success" type="number" name="number" aria-label="number" placeholder="Sonni toping" required>
+    <input class="js-game-input form-control text-success" type="number" name="number" aria-label="number" placeholder="Sonni toping" required>
 
-    <button class="btn btn-success ml-3" type="submit">Topish</button>
+    <button class="btn btn-success ml-2 w-100" type="submit">Topish</button>
   </form>
 </div>
 
-<div class="ml-3 mt-3 d-flex flex-column">
+<div class="mt-3 d-flex flex-column">
   <output class="text-success">Izoh: <span class="js-game-output text-success"></span></output>
   <output class="text-success">Imkoniyat: <span class="js-game-num text-success"></span></output>
+</div>
 </div>
 
 <script src="js/main.js"></script>
