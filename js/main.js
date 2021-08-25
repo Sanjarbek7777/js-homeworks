@@ -70,6 +70,7 @@ elFizzForm.addEventListener("submit", function (evt) {
 var elGameForm = document.querySelector('.js-game-form');
 var elGameInput = document.querySelector('.js-game-input');
 var elGameInfo = document.querySelector('.js-game-output');
+var elGameBtn = document.querySelector('.js-game-button');
 var elNum = document.querySelector('.js-game-num');
 var randomNumber = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 var i = 6;
@@ -84,6 +85,8 @@ elGameForm.addEventListener("submit", function (evt) {
 
   if(num == 0) {
     elGameInfo.textContent = "Imkoniyatingiz qolmadi :)";
+    elGameInput.setAttribute('disabled', '');
+    elGameBtn.setAttribute('disabled', '');
   }else if(+elGameInput.value > randomNumber){
     elGameInfo.textContent = "Tanlagan soningiz katta!";
     elNum.textContent = "Imkoniyatingiz " + num + " ta qoldi";
