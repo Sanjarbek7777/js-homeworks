@@ -26,24 +26,31 @@
 // Dollardagi pul: $${moneyInUSD}
 // So'mdagi pul: ${moneyInUZS} so'm`);
 
+// Formni ozgartiruvchi ornida oldim
 var form = document.querySelector('.js-intro-form');
 
+// Unga submit qilganda xodisasini berdim
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
+
+  // O'zgaruvchilarni chaqirib oldim
   var inputSumma = document.querySelector('.input-summa');
   var inputSelect = document.querySelector('.js-select');
   var inputResult = document.querySelector('.js-convert');
 
+  // Foydalanuvchidan kegan qiymatni valyuta qiymatiga kopaytirib outputga yozdirdim
   var currentlyResult = Number(inputSumma.value) * Number(inputSelect.value);
   inputResult.textContent = currentlyResult;
 });
 
 // -----------------------------------------------------------------------------------
 
+// Ozgaruvchilarni tanlab oldim
 var elFizzForm = document.querySelector('.js-fizz-form');
 var elInputFizzNumber = document.querySelector('.js-fizz-input');
 var elOutputNumber = document.querySelector('.js-fizz-output');
 
+// Formga submit qilganda xodisasini berdim
 elFizzForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
