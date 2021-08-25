@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap 5</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <form class="js-intro-form" action="https://echo.htmlacademy.ru">
+    <div>
+      <input class="user-name" type="text" name="name" aria-label="Name" placeholder="Name" required>
+    </div>
+    <div>
+      <input class="user-last-name" type="text" name="surname" aria-label="Surname" placeholder="Surname" required>
+    </div>
+    <div>
+      <input class="user-age" type="number" name="age" aria-label="Age" placeholder="Age" required>
+    </div>
+    <div>
+      <input class="user-id" type="text" name="passport_id" aria-label="Passport No" placeholder="Passport No" required>
+    </div>
+    <div>
+      <input class="user-balance-usd"  type="number" name="money_in_dollars" aria-label="Dollars" placeholder="Dollars" required>
+    </div>
+    <div>
+      <p><b>Dollar kursi:</b> 10641 so'm</p>
+    </div>
+    <button class="form-submit" type="submit">Go</button>
+  </form>
+
+  <hr>
+
+  <div>
+    <p><strong>Ism-familiya:</strong> <b class="set-name"></b> <b class="set-lastname"></b></p>
+    <p><strong>Yosh:</strong> <b class="set-age"></b></p>
+    <p><strong>Pasport:</strong> <b class="set-id"></b></p>
+    <p><strong>Dollardagi pul:</strong> $<b class="set-dollar"></b></p>
+    <p><strong>So'mdagi pul:</strong> <b class="set-sum"></b> so'm</p>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
