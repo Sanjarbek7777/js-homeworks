@@ -68,28 +68,29 @@ elFizzForm.addEventListener("submit", function (evt) {
 // X = Math.floor(Math.random() * (max - min + 1) + min);
 
 var elGameForm = document.querySelector('.js-game-form');
+var elGameInput = document.querySelector('.js-game-input');
+var elGameInfo = document.querySelector('.js-game-output');
+var elNum = document.querySelector('.js-game-num');
+var randomNumber = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+var i = 6;
+var num = i;
+elNum.textContent = i;
+
 
 elGameForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
-  var elGameInput = document.querySelector('.js-game-input');
-  var elGameInfo = document.querySelector('.js-game-output');
-  var randomNumber = Math.floor(Math.random() * (100 - 1 + 1) + 1);
-  var elNum = document.querySelector('.js-game-num');
-  var i = 6;
-  var num = i;
+  elNum.textContent = --num
 
-  if(i == 0) {
+  if(num == 0) {
     elGameInfo.textContent = "Imkoniyatingiz qolmadi :)";
   }else if(+elGameInput.value > randomNumber){
-    --i;
     elGameInfo.textContent = "Tanlagan soningiz katta!";
     elNum.textContent = "Imkoniyatingiz " + num + " ta qoldi";
   }else if(+elGameInput.value < randomNumber){
-    --i;
     elGameInfo.textContent = "Tanlagan soningiz kichik!";
     elNum.textContent = "Imkoniyatingiz " + num + " ta qoldi";
-  }else if( lGameInput.value == randomNumber){
+  }else if(+elGameInput.value == randomNumber){
     elGameInfo.textContent = "Tabriklaymiz topdingiz."
   }
 });
