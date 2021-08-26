@@ -55,12 +55,12 @@ elFizzForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
   if(Number(elInputFizzNumber.value) > 0) {
-    if(Number(elInputFizzNumber.value) % 5 === 0 && Number(elInputFizzNumber.value)){
+    if(Number(elInputFizzNumber.value) % 5 === 0 && Number(elInputFizzNumber.value) % 3 === 0){
       elOutputNumber.textContent = "Fizz Buzz";
     } else if(Number(elInputFizzNumber.value) % 5 === 0){
-      elOutputNumber.textContent = "Fizz";
-    } else if(Number(elInputFizzNumber.value) % 3 === 0){
       elOutputNumber.textContent = "Buzz";
+    } else if(Number(elInputFizzNumber.value) % 3 === 0){
+      elOutputNumber.textContent = "Fizz";
     } else{
       elOutputNumber.textContent = elInputFizzNumber.value;
     }
