@@ -65,7 +65,7 @@ elFizzForm.addEventListener("submit", function (evt) {
       elOutputNumber.textContent = elInputFizzNumber.value;
     }
   } else{
-    elOutputNumber.textContent = "Son kiriting";
+    elOutputNumber.textContent = "0 va 100 orasida son kiriting!!!";
   }
 });
 
